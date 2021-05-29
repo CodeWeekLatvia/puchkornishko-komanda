@@ -32,7 +32,7 @@
  });
 </script>
 
-<style>
+<style scoped="true">
  .greeting {
      font-size: 20px;
  }
