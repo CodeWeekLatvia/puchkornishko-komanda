@@ -59,7 +59,7 @@
      color: rgb(14, 141, 199);
      display: grid;
      justify-content: center;
-     background: white;
+     background: #eee;
      padding: 20px;
  }
 
@@ -86,12 +86,13 @@
      justify-content: center;
      grid-gap: 40px;
      max-width: 1000px;
-     color: white;
+     color: #eee;
  }
 
  #big-intro-text {
      font-weight: bold;
-     font-size: 30px;
+     font-size: 40px;
+     margin-bottom: 0;
  }
 
  #form-wrapper {
