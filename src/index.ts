@@ -7,10 +7,7 @@ const v = new Vue({
   el: '#app',
   template: `
     <div id="main">
-        <style>#main { background: pink; }</style>
         <top-banner-component />
-        <simple-form-component title="Darba devēja forma" />
-        <simple-form-component title="Darba ņēmēja forma" />
     </div>
     `,
   components: {
