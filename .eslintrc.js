@@ -15,6 +15,10 @@ module.exports = {
     ecmaVersion: 12,
     project: "tsconfig.json",
   },
+  rules: [
+    'no-console': 'off',
+    'no-plusplus': 'off',
+  ],
   plugins: [
     '@typescript-eslint',
   ],
