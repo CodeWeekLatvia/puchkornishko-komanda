@@ -1,6 +1,7 @@
 import Vue from 'vue';
-import HelloComponent from './components/Hello';
+import HelloComponent from './components/Hello.vue';
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const v = new Vue({
   el: '#app',
   template: `
