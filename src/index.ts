@@ -3,13 +3,14 @@ import SimpleFormComponent from './components/SimpleForm.vue';
 import FeatureTextComponent from './components/FeatureText.vue';
 import FeatureImageComponent from './components/FeatureImage.vue';
 import TopBannerComponent from './components/TopBanner.vue';
+import CardCollectionComponent from './components/CardCollection.vue';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const v = new Vue({
   el: '#app',
   template: ` 
     <div id="main">
-      <top-banner-component />
+        <top-banner-component />
       <div class="row">
         <div class="col-sm-6" style="margin-top: 50px; margin-left: 200px">
           <feature-image-component img="https://media.istockphoto.com/photos/glad-to-work-with-you-picture-id951514270?k=6&m=951514270&s=612x612&w=0&h=KBRjJWwno25V6v3CtZt2QFkTdFOeeaXwGKE4RNws1a8="/>      
@@ -48,7 +49,7 @@ const v = new Vue({
           <feature-image-component img="https://catanacapital.com/wp-content/uploads/2020/04/Remote_Work-780x438.jpg"/>      
         </div>
       </div>
-
+       <card-collection-component style="width: 100%" />
       <a href="business-main.html">Pievienoties kā uzņēmumam</a>
     `,
   components: {
@@ -56,19 +57,6 @@ const v = new Vue({
     FeatureTextComponent,
     FeatureImageComponent,
     TopBannerComponent,
+    CardCollectionComponent
   },
 });
-
- /*
-<div>
-        <simple-form-component title="Darba devēja forma" />
-        <simple-form-component title="Darba ņēmēja forma" />
-    </div>
-style="display: inline;" 
-      <feature-text-component style="display: inline;" title="test" description="this is a very good description">
-      <feature-text-component title="test" description="this is a very good description">
-    
-      <div>
-
-    </div>
- */
