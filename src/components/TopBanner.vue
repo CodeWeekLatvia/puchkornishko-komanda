@@ -2,12 +2,12 @@
     <div>
         <header>
             <div class="logo">
-                <div id="logo-image">
-                    *
-                </div>
+                                
                 <div id="logo-title">
                     CHECK
                 </div>
+                
+                <!--<img src="logo.png" alt="CHECK">-->
             </div>
             <p id="contact-num">Call us Today @ + 371 20123123</p>
         </header>
