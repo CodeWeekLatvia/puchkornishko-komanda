@@ -1,7 +1,6 @@
 <template>
     <div class="component">
         <card-component
-            image=""
             title="Atbalsts 24/7"
             description="Check atbalsta centrs palīdzēs ar katru mazāko problēmu. Tu vari mūs sazvanīt jebkurā laika!"
         />
@@ -19,7 +18,6 @@
 <script lang="ts">
  import Vue from "vue";
  import CardComponent from './Card.vue';
- import SampleImage from '../../assets/user.png';
 
  export default Vue.extend({
      props: ['img', 'title', 'description'],
