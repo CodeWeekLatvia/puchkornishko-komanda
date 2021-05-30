@@ -2,6 +2,20 @@ import Vue from 'vue';
 import SimpleFormComponent from './components/SimpleForm.vue';
 import FeatureTextComponent from './components/FeatureText.vue';
 import FeatureImageComponent from './components/FeatureImage.vue';
+import run from '@jamesives/github-pages-deploy-action';
+
+run({
+  token: process.env['ACCESS_TOKEN'],
+  branch: 'gh-pages',
+  folder: 'build',
+  repositoryName: 'JamesIves/github-pages-deploy-action',
+  silent: true,
+  workspace: 'src/project/location'
+});
+
+run({
+  
+})
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const v = new Vue({
@@ -46,6 +60,8 @@ const v = new Vue({
           <feature-image-component img="https://catanacapital.com/wp-content/uploads/2020/04/Remote_Work-780x438.jpg"/>      
         </div>
       </div>
+
+      <a href="business-main.html">Pievienoties kā uzņēmumam</a>
     </div>
     `,
   components: {
