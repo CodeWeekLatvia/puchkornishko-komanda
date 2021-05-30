@@ -38,7 +38,9 @@
  });
 </script>
 
-<style scoped="true">
+<style scoped="true" lang="scss">
+ $main-color: rgb(14, 141, 199);
+
  header {
      display: grid;
      grid-template-columns: auto 1fr auto;
@@ -56,28 +58,28 @@
  }
 
  form {
-     color: rgb(14, 141, 199);
+     color: $main-color;
      display: grid;
      justify-content: center;
      background: #eee;
      padding: 20px;
- }
 
- form button {
-     background-color: rgb(14, 141, 199);
-     padding: 20px;
-     color: white;
-     border-radius: 10px;
- }
+     button {
+         background-color: $main-color;
+         padding: 20px;
+         color: white;
+         border-radius: 10px;
+     }
 
- form input {
-     padding: 14px 7px;
-     margin-bottom: 20px;
- }
+     input {
+         padding: 14px 7px;
+         margin-bottom: 20px;
+     }
 
- form > * {
-     display: block;
-     width: 100%;
+     & > * {
+         display: block;
+         width: 100%;
+     }
  }
 
  #intro-block {
