@@ -2,26 +2,14 @@ import Vue from 'vue';
 import SimpleFormComponent from './components/SimpleForm.vue';
 import FeatureTextComponent from './components/FeatureText.vue';
 import FeatureImageComponent from './components/FeatureImage.vue';
-import run from '@jamesives/github-pages-deploy-action';
-
-run({
-  token: process.env['ACCESS_TOKEN'],
-  branch: 'gh-pages',
-  folder: 'build',
-  repositoryName: 'JamesIves/github-pages-deploy-action',
-  silent: true,
-  workspace: 'src/project/location'
-});
-
-run({
-  
-})
+import TopBannerComponent from './components/TopBanner.vue';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const v = new Vue({
   el: '#app',
   template: ` 
-    <div>
+    <div id="main">
+      <top-banner-component />
       <div class="row">
         <div class="col-sm-6" style="margin-top: 50px; margin-left: 200px">
           <feature-image-component img="https://media.istockphoto.com/photos/glad-to-work-with-you-picture-id951514270?k=6&m=951514270&s=612x612&w=0&h=KBRjJWwno25V6v3CtZt2QFkTdFOeeaXwGKE4RNws1a8="/>      
@@ -62,12 +50,12 @@ const v = new Vue({
       </div>
 
       <a href="business-main.html">Pievienoties kā uzņēmumam</a>
-    </div>
     `,
   components: {
     SimpleFormComponent,
     FeatureTextComponent,
-    FeatureImageComponent
+    FeatureImageComponent,
+    TopBannerComponent,
   },
 });
 
